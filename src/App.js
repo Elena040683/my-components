@@ -3,7 +3,7 @@ import {Gallery} from './components/Gallery/Gallery'
 import Title from './components/Title/Title';
 
 const galleryImages = {
-  title: 'Images',
+  title: 'images',
   // description: 'Best Img',
   images: [
     {
@@ -27,7 +27,7 @@ function App() {
       <Gallery title={title} description={description} images={images}>
         {/* Это children */}
         {/* Условный рендер */}
-        {title==='Images' && <Title value={title} />}
+        {title==='images' && <Title value={title} />}
         
         <p>Just Text</p>
       </Gallery>

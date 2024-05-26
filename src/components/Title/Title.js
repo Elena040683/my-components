@@ -1,6 +1,14 @@
 import PropTypes from 'prop-types';
-function Title ({value}){
-  return <h2>{value}</h2>
+import style from './Title.module.css';
+
+// создадим объект inline стилей
+const stylesForTitle = {
+  color: 'green',
+  textTransform: 'uppercase',
+}
+
+const Title = ({value}) => {
+  return <h2 className={style.title} style={stylesForTitle}>{value}</h2>
 }
 
 export default Title;
